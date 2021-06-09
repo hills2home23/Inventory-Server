@@ -12,9 +12,13 @@ const offlineOrdersSchema = new mongoose.Schema({
         type: String,
         required: [true, "Customer Phone is required"]
     },
-    customerAddress: {
+    customerAddress1: {
         type: String,
-        required: [true, "Customer Address is required"]
+        required: [true, "Enter sector no or house no"]
+    },
+    customerAddress2: {
+        type: String,
+        required: [true, "Enter area name or locality name"]
     },
     customerCity: {
         type: String,
